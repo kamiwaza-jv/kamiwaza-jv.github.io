@@ -3,30 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>Kamiwaza AI - Research Repository</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
             line-height: 1.6;
         }
-        h1 {
-            color: #333;
+
+        header {
+            background-color: #111;
+            border-bottom: 2px solid #00ff88;
+            padding: 2rem 0;
         }
+
         .container {
-            background-color: #f4f4f4;
-            padding: 20px;
-            border-radius: 5px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .logo-section img {
+            height: 60px;
+        }
+
+        .logo-section h1 {
+            color: #00ff88;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 1.5rem;
+        }
+
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin-right: 2rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #00ff88;
+            color: #0a0a0a;
+        }
+
+        main {
+            padding: 4rem 0;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section h3 {
+            color: #00ff88;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: #00ff88;
+            transform: translateY(-4px);
+        }
+
+        .card h4 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            color: #b0b0b0;
+            margin-bottom: 1rem;
+        }
+
+        .card a {
+            color: #00ff88;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #111;
+            border-top: 2px solid #00ff88;
+            padding: 2rem 0;
+            text-align: center;
+            color: #808080;
+        }
+
+        .coming-soon {
+            background-color: #1a1a1a;
+            padding: 3rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px dashed #333;
+        }
+
+        .coming-soon h4 {
+            color: #00ff88;
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My GitHub Page</h1>
-        <p>This is a test page hosted on GitHub Pages.</p>
-        <p>If you can see this, it's working! 🎉</p>
-    </div>
+    <header>
+        <div class="container">
+            <div class="logo-section">
+                <img src="kamiwaza-logo-light.png" alt="Kamiwaza AI Logo">
+                <h1>KAMIWAZA AI</h1>
+            </div>
+            <nav>
+                <a href="#papers">Research Papers</a>
+                <a href="#datasets">Datasets</a>
+                <a href="#blog">Blog</a>
+                <a href="https://github.com/kamiwaza-ai" target="_blank">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="hero">
+                <h2>Public Research Repository</h2>
+                <p>Advancing AI through open research, transparent methodologies, and reproducible results.</p>
+            </div>
+
+            <section id="papers" class="section">
+                <h3>Research Papers</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <h4>Paper Title Coming Soon</h4>
+                        <p>Description of the research paper will go here. This is a placeholder for your first publication.</p>
+                        <a href="#">Read Paper (PDF) →</a>
+                    </div>
+                    <div class="card">
+                        <h4>Another Research Paper</h4>
+                        <p>Brief description of the methodology and findings.</p>
+                        <a href="#">Read Paper (PDF) →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="datasets" class="section">
+                <h3>Datasets</h3>
+                <div class="coming-soon">
+                    <h4>Datasets Coming Soon</h4>
+                    <p>Experimental data and benchmarks will be available here.</p>
+                </div>
+            </section>
+
+            <section id="blog" class="section">
+                <h3>Blog</h3>
+                <div class="coming-soon">
+                    <h4>Blog Posts Coming Soon</h4>
+                    <p>Insights, tutorials, and updates from the Kamiwaza AI team.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kamiwaza AI. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
